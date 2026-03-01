@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1><FONT SIZE=20 FACE="Arial" COLOR="black"><center><b>Практическая работа №2</b></center></FONT></h1>
+<p><FONT SIZE=15 FACE="Arial" COLOR="black"><center><b>Выполненил Бобрик Павел</b></center></FONT></p>
+<p><FONT SIZE=15 FACE="Arial" COLOR="black"><center><b>Группы ИСП-208</b></center></FONT></p>
+<p><FONT SIZE=15 FACE="Arial" COLOR="black"><b>Задание 1 "Создать 3 блока в ряд"</b></FONT></p>
+<style>
+.Zadanie1 {
+  display: inline-block;
+  width: 31%;         /* Ширина */
+  padding: 20px;        /* Внутренний отступ */
+  border: 1px solid black; /* Рамка */
+  margin: 0px;         /* Внешний отступ */
+  background-color: lightgray;
+}
+</style>
+<div class="Zadanie1">1 Блок</div><div class="Zadanie1">2 Блок</div><div class="Zadanie1">3 блок</div>
+<p style="margin-top: 30px;"></p>
+<p><FONT SIZE=15 FACE="Arial" COLOR="black"><b>Задание 2 "Большой контейнер"</b></FONT></p>
+<style>
+.zadanie2 {
+    width: 100%;           /* Растягиваем на всю ширину */
+    background-color: lightgray; /* Цвет фона для наглядности */
+    padding: 20px 0;       /* Отступы сверху и снизу */
+    text-align: center;    /* Выравнивание текста по центру */
+    border: 1px solid black; /* Рамка */
+  }
+</style>
+ <div class="zadanie2">
+    <h1>Привет мир</h1>
+</div>
+<p><FONT SIZE=15 FACE="Arial" COLOR="black"><b>Задание 3 "Расположение блоков"</b></FONT></p>
+  <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        
+        /* Общий стиль для всех строк-контейнеров */
+        .row {
+            display: flex;
+            margin-bottom: 15px; /* Отступ между рядами */
+            height: 30px;
+            line-height: 30px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Общие стили для блоков */
+        .box { padding-left: 10px; }
+
+        /* Цвета блоков из примера */
+        .red { background-color: #ff9999; }
+        .blue { background-color: #add8e6; }
+        .green { background-color: #2ecc71; }
+        .emerald { background-color: #386e53; }
+        .grey { background-color: #cccccc; }
+        .white { background-color: #ffffff; }
+
+        /* Настройка ширины для каждого ряда */
+        .w-50 { width: 50%; }
+        .w-16 { width: 16.66%; }
+        .w-25 { width: 25%; }
+        .w-20 { width: 20%; }
+    </style>
+    <h1>Различные блоки</h1>
+
+    <!-- Первый ряд: 2 блока по 50% -->
+    <div class="row">
+        <div class="box red w-50">Первый</div>
+        <div class="box blue w-50">Второй</div>
+    </div>
+
+    <!-- Второй ряд: 6 блоков (примерно по 16.6%) -->
+    <div class="row">
+        <div class="box red w-16">Первый</div>
+        <div class="box blue w-16">Второй</div>
+        <div class="box green w-16">Третий</div>
+        <div class="box emerald w-16">Четвертый</div>
+        <div class="box white w-16">Пятый</div>
+        <div class="box grey w-16">Шестой</div>
+    </div>
+
+    <!-- Третий ряд: 5 блоков по 20% -->
+    <div class="row">
+        <div class="box red w-25">Первый</div>
+        <div class="box blue w-25">Второй</div>
+        <div class="box red w-20">Первый</div>
+        <div class="box blue w-20">Второй</div>
+        <div class="box green w-10" style="width: 10%;">Третий</div>
+    </div>
+<p><FONT SIZE=15 FACE="Arial" COLOR="black"><b>Задание 4 "Вертикальное расположение блоков"</b></FONT></p>
+<div style="display: flex; height: 175px; background-color: #f8f9fa; border: 1px solid #ccc;">
+    
+    <!-- Первый блок: прижат к ВЕРХУ -->
+    <div style="flex: 1; align-self: flex-start; background-color: #d68a8a; padding: 20px; margin: 5px; margin: 0;">
+        Крутой блок, верно?
+    </div>
+    
+    <!-- Второй блок: строго по ЦЕНТРУ -->
+    <div style="flex: 1; align-self: center; background-color: #d6c68a; padding: 20px; margin: 5px; margin: 0;">
+        Но посмотрите на этот
+    </div>
+    
+    <!-- Третий блок: прижат к НИЗУ -->
+    <div style="flex: 1; align-self: flex-end; background-color: #8ad6cc; padding: 20px; margin: 5px; margin: 0;">
+        Хотя чего там, этот самый крутой
+    </div>
+    
+</div>
+<p><FONT SIZE=15 FACE="Arial" COLOR="black"><b>Задание 5 "Отступы между блоками"</b></FONT></p>
+<div style="display: flex; height: 58px; justify-content: space-between; background-color: #f8f9fa; border: 1px solid #ccc;">
+    
+    <!-- Первый блок: прижат к ВЕРХУ -->
+    <div style="width: 30%; align-self: flex-start; background-color: #d68a8a; padding: 20px; margin: 5px; margin: 0;">
+        Крутой блок, верно?
+    </div>
+    
+    <!-- Третий блок: прижат к НИЗУ -->
+    <div style="width: 30%; align-self: flex-end; background-color: #8ad6cc; padding: 20px; margin: 5px; margin: 0;">
+        Хотя чего там, этот самый крутой
+    </div>
+    
+</div>
+</body>
+</html>  
