@@ -20,34 +20,34 @@ h1, p {
     text-align: center;
 }
 
-.big-text {
+.title {
     font-size: 28px;
     font-weight: bold;
 }
 
-.medium-text {
+.subtitle {
     font-size: 20px;
     font-weight: bold;
 }
 
-/* ===== Задание 1 ===== */
+/* ===== ЗАДАНИЕ 1 ===== */
 
 .zadanie1-container {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .Zadanie1 {
     flex: 1;
-    min-width: 250px;
     padding: 20px;
     border: 1px solid black;
     background-color: lightgray;
     text-align: center;
 }
 
-/* ===== Задание 2 ===== */
+/* ===== ЗАДАНИЕ 2 ===== */
 
 .zadanie2 {
     width: 100%;
@@ -57,19 +57,19 @@ h1, p {
     border: 1px solid black;
 }
 
-/* ===== Задание 3 ===== */
+/* ===== ЗАДАНИЕ 3 ===== */
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 15px;
+    overflow-x: auto;
 }
 
 .box {
+    flex: 1;
     padding: 10px;
     text-align: center;
-    flex: 1;
-    min-width: 120px;
 }
 
 /* Цвета */
@@ -80,14 +80,14 @@ h1, p {
 .grey { background-color: #cccccc; }
 .white { background-color: #ffffff; border: 1px solid #ccc; }
 
-/* ===== Задание 4 ===== */
+/* ===== ЗАДАНИЕ 4 ===== */
 
 .vertical-container {
     display: flex;
     height: 175px;
     background-color: #f8f9fa;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
+    overflow-x: auto;
 }
 
 .vertical-box {
@@ -96,15 +96,15 @@ h1, p {
     margin: 5px;
 }
 
-/* ===== Задание 5 ===== */
+/* ===== ЗАДАНИЕ 5 ===== */
 
 .space-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     background-color: #f8f9fa;
     border: 1px solid #ccc;
     padding: 10px;
+    overflow-x: auto;
 }
 
 .space-box {
@@ -112,30 +112,16 @@ h1, p {
     padding: 20px;
 }
 
-/* ===== Адаптация под телефон ===== */
-
-@media (max-width: 768px) {
-
-    .vertical-container {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .space-box {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
 </style>
 </head>
 
 <body>
 
-<h1 class="big-text">Практическая работа №2</h1>
-<p class="medium-text">Выполнил Бобрик Павел</p>
-<p class="medium-text">Группа ИСП-208</p>
+<h1 class="title">Практическая работа №2</h1>
+<p class="subtitle">Выполнил Бобрик Павел</p>
+<p class="subtitle">Группа ИСП-208</p>
 
-<p class="medium-text">Задание 1 "Создать 3 блока в ряд"</p>
+<p class="subtitle">Задание 1 "Создать 3 блока в ряд"</p>
 
 <div class="zadanie1-container">
     <div class="Zadanie1">1 Блок</div>
@@ -143,15 +129,15 @@ h1, p {
     <div class="Zadanie1">3 Блок</div>
 </div>
 
-<p class="medium-text">Задание 2 "Большой контейнер"</p>
+<p class="subtitle">Задание 2 "Большой контейнер"</p>
 
 <div class="zadanie2">
     <h1>Привет мир</h1>
 </div>
 
-<p class="medium-text">Задание 3 "Расположение блоков"</p>
+<p class="subtitle">Задание 3 "Расположение блоков"</p>
 
-<h2>Различные блоки</h2>
+<h2 style="text-align:center;">Различные блоки</h2>
 
 <div class="row">
     <div class="box red">Первый</div>
@@ -173,19 +159,32 @@ h1, p {
     <div class="box green">Третий</div>
 </div>
 
-<p class="medium-text">Задание 4 "Вертикальное расположение блоков"</p>
+<p class="subtitle">Задание 4 "Вертикальное расположение блоков"</p>
 
 <div class="vertical-container">
-    <div class="vertical-box red" style="align-self: flex-start;">Крутой блок, верно?</div>
-    <div class="vertical-box" style="align-self: center; background:#d6c68a;">Но посмотрите на этот</div>
-    <div class="vertical-box blue" style="align-self: flex-end;">Хотя чего там, этот самый крутой</div>
+    <div class="vertical-box red" style="align-self: flex-start;">
+        Крутой блок, верно?
+    </div>
+
+    <div class="vertical-box" style="align-self: center; background:#d6c68a;">
+        Но посмотрите на этот
+    </div>
+
+    <div class="vertical-box blue" style="align-self: flex-end;">
+        Хотя чего там, этот самый крутой
+    </div>
 </div>
 
-<p class="medium-text">Задание 5 "Отступы между блоками"</p>
+<p class="subtitle">Задание 5 "Отступы между блоками"</p>
 
 <div class="space-container">
-    <div class="space-box red">Крутой блок, верно?</div>
-    <div class="space-box blue">Хотя чего там, этот самый крутой</div>
+    <div class="space-box red">
+        Крутой блок, верно?
+    </div>
+
+    <div class="space-box blue">
+        Хотя чего там, этот самый крутой
+    </div>
 </div>
 
 </body>
