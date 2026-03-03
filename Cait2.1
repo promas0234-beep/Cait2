@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Практическая работа №2</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Заголовки */
+h1, p {
+    text-align: center;
+}
+
+.big-text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.medium-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ===== Задание 1 ===== */
+
+.zadanie1-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Zadanie1 {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* ===== Задание 2 ===== */
+
+.zadanie2 {
+    width: 100%;
+    background-color: lightgray;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* ===== Задание 3 ===== */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.box {
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+}
+
+/* Цвета */
+.red { background-color: #ff9999; }
+.blue { background-color: #add8e6; }
+.green { background-color: #2ecc71; }
+.emerald { background-color: #386e53; color: white; }
+.grey { background-color: #cccccc; }
+.white { background-color: #ffffff; border: 1px solid #ccc; }
+
+/* ===== Задание 4 ===== */
+
+.vertical-container {
+    display: flex;
+    height: 175px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.vertical-box {
+    flex: 1;
+    padding: 20px;
+    margin: 5px;
+}
+
+/* ===== Задание 5 ===== */
+
+.space-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.space-box {
+    width: 48%;
+    padding: 20px;
+}
+
+/* ===== Адаптация под телефон ===== */
+
+@media (max-width: 768px) {
+
+    .vertical-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .space-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="big-text">Практическая работа №2</h1>
+<p class="medium-text">Выполнил Бобрик Павел</p>
+<p class="medium-text">Группа ИСП-208</p>
+
+<p class="medium-text">Задание 1 "Создать 3 блока в ряд"</p>
+
+<div class="zadanie1-container">
+    <div class="Zadanie1">1 Блок</div>
+    <div class="Zadanie1">2 Блок</div>
+    <div class="Zadanie1">3 Блок</div>
+</div>
+
+<p class="medium-text">Задание 2 "Большой контейнер"</p>
+
+<div class="zadanie2">
+    <h1>Привет мир</h1>
+</div>
+
+<p class="medium-text">Задание 3 "Расположение блоков"</p>
+
+<h2>Различные блоки</h2>
+
+<div class="row">
+    <div class="box red">Первый</div>
+    <div class="box blue">Второй</div>
+</div>
+
+<div class="row">
+    <div class="box red">Первый</div>
+    <div class="box blue">Второй</div>
+    <div class="box green">Третий</div>
+    <div class="box emerald">Четвертый</div>
+    <div class="box white">Пятый</div>
+    <div class="box grey">Шестой</div>
+</div>
+
+<div class="row">
+    <div class="box red">Первый</div>
+    <div class="box blue">Второй</div>
+    <div class="box green">Третий</div>
+</div>
+
+<p class="medium-text">Задание 4 "Вертикальное расположение блоков"</p>
+
+<div class="vertical-container">
+    <div class="vertical-box red" style="align-self: flex-start;">Крутой блок, верно?</div>
+    <div class="vertical-box" style="align-self: center; background:#d6c68a;">Но посмотрите на этот</div>
+    <div class="vertical-box blue" style="align-self: flex-end;">Хотя чего там, этот самый крутой</div>
+</div>
+
+<p class="medium-text">Задание 5 "Отступы между блоками"</p>
+
+<div class="space-container">
+    <div class="space-box red">Крутой блок, верно?</div>
+    <div class="space-box blue">Хотя чего там, этот самый крутой</div>
+</div>
+
+</body>
+</html>
